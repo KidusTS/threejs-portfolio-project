@@ -1,8 +1,12 @@
 import React from "react";
-import Navbar from "./sections/Navbar";
+import Navbar from "./sections/navbar";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
+import Experiences from "./sections/Experiences";
+import Testimonial from "./sections/Testimonial";
+
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -11,17 +15,9 @@ const App = () => {
       <Hero />
       <About />
       <Projects />
-      <section className="py-10"></section>
-      {/* <section className="min-h-screen"></section> */}
-      {/* <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section>
-      <section className="min-h-screen"></section> */}
-      {/* experience  */}
-      {/* testimonials  */}
-      {/* contact */}
-      {/* footer  */}
+      <Experiences />
+      <Testimonial />
+      <Footer />
     </div>
   );
 };

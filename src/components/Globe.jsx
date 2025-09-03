@@ -15,11 +15,11 @@ const GLOBE_CONFIG = {
   devicePixelRatio: 2,
   phi: 0,
   theta: 0.3,
-  dark: 0,
+  dark: 1,
   diffuse: 0.4,
   mapSamples: 16000,
   mapBrightness: 1.2,
-  baseColor: [0.3, 0.3, 0.3],
+  baseColor: [1, 1, 1],
   markerColor: [1, 1, 1],
   glowColor: [1, 1, 1],
   markers: [
@@ -97,7 +97,7 @@ export function Globe({ className, config = GLOBE_CONFIG }) {
   return (
     <div
       className={twMerge(
-        " mx-auto aspect-[1/1] w-full max-w-[600px]",
+        "mx-auto aspect-[1/1] w-full max-w-[600px]",
         className
       )}
     >
